@@ -1,8 +1,8 @@
-# EP 2019-1: Escape Insper
+﻿# EP 2019-1: Escape Insper
 #
 # Alunos: 
-# - aluno A: Fulano da Silva, fulanos@insper.edu.br
-# - aluno B: Sicrano de Almeida, sicranoa1@insper.edu.br
+# - aluno A: Marcelo Miguel, marcelocm8@al.insper.edu.br
+# - aluno B: Byron Hans, byronhboe@al.insper.edu.br
 
 def carregar_cenarios():
     cenarios = {
