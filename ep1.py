@@ -4,16 +4,8 @@
 # - aluno A: Marcelo Miguel, marcelocm8@al.insper.edu.br
 # - aluno B: Byron Hans, byronhboe@al.insper.edu.br
 
-# EP 2019-1: Escape Insper
-#
-## EP 2019-1: Escape Insper
-#
-# Alunos: 
-# - aluno A: Marcelo Miguel, marcelocm8@al.insper.edu.br
-# - aluno B: Byron Hans, byronhboe@al.insper.edu.br
-
 jogo = True
-derrota = "GAME OVER! x__x "
+derrota = "GAME OVER! x___x "
 #definição de todos os cenários
 
 cenário = {
@@ -65,15 +57,6 @@ while jogo == True:
         
         print("KITARA: não há tempo para explicações Insperiano! Você precisa"
           "adiar o EP1 para o bem de todos! Aliás, qual o seu nome?")
-<<<<<<< HEAD
-else:
-    print("opção inválida por favor digite A ou B")
-
-nome_do_jogador = input("Digite seu nome: ")
-
-print("KITARA: Certo {},"
-      " precisamos encontrar seu professor!".format(nome_do_jogador))
-=======
         
         nome_do_jogador = input("Digite seu nome: ")
         print("")
@@ -88,4 +71,3 @@ print("KITARA: Certo {},"
         break
     
 print(Vitória)
->>>>>>> 265dc6b21581ef0197ad05ba6bded43fccb7a17f
