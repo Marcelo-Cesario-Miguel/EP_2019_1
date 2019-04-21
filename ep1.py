@@ -4,83 +4,57 @@
 # - aluno A: Marcelo Miguel, marcelocm8@al.insper.edu.br
 # - aluno B: Byron Hans, byronhboe@al.insper.edu.br
 
-def carregar_cenarios():
-    cenarios = {
-        "inicio": {
-            "titulo": "Saguao do perigo",
-            "descricao": "Voce esta no saguao de entrada do insper",
-            "opcoes": {
-                "andar professor": "Tomar o elevador para o andar do professor",
-                "biblioteca": "Ir para a biblioteca"
-            }
-        },
-        "andar professor": {
-            "titulo": "Andar do desespero",
-            "descricao": "Voce chegou ao andar da sala do seu professor",
-            "opcoes": {
-                "inicio": "Tomar o elevador para o saguao de entrada",
-                "professor": "Falar com o professor"
-            }
-        },
-        "professor": {
-            "titulo": "O monstro do Python",
-            "descricao": "Voce foi pedir para o professor adiar o EP. "
-                         "O professor revelou que é um monstro disfarçado "
-                         "e devorou sua alma.",
-            "opcoes": {}
-        },
-        "biblioteca": {
-            "titulo": "Caverna da tranquilidade",
-            "descricao": "Voce esta na biblioteca",
-            "opcoes": {
-                "inicio": "Voltar para o saguao de entrada"
-            }
-        }
-    }
-    nome_cenario_atual = "inicio"
-    return cenarios, nome_cenario_atual
+# EP 2019-1: Escape Insper
+#
+# Alunos: 
+# - aluno A: Marcelo Miguel, marcelocm8@al.insper.edu.br
+# - aluno B: Byron Hans, byronhboe@al.insper.edu.br
 
 
-def main():
-    print("Na hora do sufoco!")
-    print("------------------")
-    print()
-    print("Parecia uma boa idéia: vou só jogar um pouquinho/assistir Netflix/"
-        "embaçar em geral. Amanhã eu começo o EP. Mas isso não deu certo...")
-    print()
-    print("É o dia de entregar o EP e você está muuuuito atrasado! Você está "
-        "na entrada do Insper, e quer procurar o professor para pedir um "
-        "adiamento do EP (boa sorte...)")
-    print()
 
-    cenarios, nome_cenario_atual = carregar_cenarios()
+#definição de todos os cenários
 
-    game_over = False
-    while not game_over:
-        cenario_atual = cenarios[nome_cenario_atual]
-
-        # Aluno A: substitua este comentário pelo código para imprimir 
-        # o cenário atual.
-
-        opcoes = cenario_atual['opcoes']
-        if len(opcoes) == 0:
-            print("Acabaram-se suas opções! Mwo mwo mwooooo...")
-            game_over = True
-        else:
-
-            # Aluno B: substitua este comentário e a linha abaixo pelo código
-            # para pedir a escolha do usuário.
-            escolha = ""
-
-            if escolha in opcoes:
-                nome_cenario_atual = escolha
-            else:
-                print("Sua indecisão foi sua ruína!")
-                game_over = True
-
-    print("Você morreu!")
+cenário = {
+        "Prédio 1":"Você está em frente ao prédio 1, o que deseja fazer?",
+        "Elevador":"Você está no elevador, selecione um andar:"}
 
 
-# Programa principal.
-if __name__ == "__main__":
-    main()
+#início do código do jogo
+
+print("KITARA: Olá Insperiano, meu nome é Kitara, sou um espectro invisível vindo de"
+      " outra de dimensão. Fui enviada para porque você precisa conseguir"
+      " adiar a entrega do EP1 de Design de Software senão você e todos os"
+      " seus colegas vão pegar DP nessa matéria!!! Ficarei com você até"
+      " conseguir, só então poderei voltar para minha dimensão!")
+
+print("")
+
+print(cenário["Prédio 1"])
+
+opção_1 = "A: Sair correndo com medo da Kitara."
+opção_2 = "B: Pedir para Kitara explicar melhor quem ela é."
+
+print("")
+
+print(opção_1)
+print(opção_2)
+
+escolha = input("Digite aqui a opção que deseja: ")
+print("")
+
+
+if escolha == "A": 
+    print("Essa não, você correu para rua e morreu atropelado!")
+elif escolha == "B":
+    print("VOCÊ: Que diabos está acontecendo e como assim você é um espectro"
+           " invisível de outra dimensão?! Eu tô ficando maluco?!")
+    print("")
+    print("KITARA: não há tempo para explicações Insperiano! Você precisa"
+          "adiar o EP1 para o bem de todos! Aliás, qual o seu nome?")
+else:
+    print("opção inválida por favor digite A ou B")
+
+nome_do_jogador = input("Digite seu nome: ")
+
+print("KITARA: Certo {},"
+      " precisamos encontrar seu professor!".format(nome_do_jogador))
