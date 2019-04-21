@@ -8,9 +8,51 @@ jogo = True
 derrota = "GAME OVER! x___x "
 #definição de todos os cenários
 
-cenário = {
-        "Prédio 1":"Você está em frente ao prédio 1, o que deseja fazer?",
-        "Elevador":"Você está no elevador, selecione um andar:"}
+Hp=100
+def procurar_cenários(): 
+    cenário = {
+        "Prédio 1":{ 
+            "titulo":"Predio 1",
+            "descrição":"Você está no Predio 1, aonde deseja ir?",
+            "opções": {
+                "Elevador":"Entrar no Elevador",
+                "Biblioteca":"Entrar na Biblioteca"
+            }
+        },
+        "Elevador":{
+            "titulo": "Elevador",
+            "descrição":"Você está no elevador, selecione um andar:",
+            "opções": {
+                "-1":"Ir para o Techlab",
+                "4":"Ir para o andar das engenharias",
+                "5":"Ir para o refeitorio",
+            }
+        },
+        "-1":{
+            "Titulo": "Techlab",
+            "descrição":"Você está no Techlab, o habitat natural dos engenheiros"
+                        "Um veterano do 9 semestre FULL PISTOlA te desafiou para um combate"
+                        "Veterano(Ataque=20, Hp= 20)",
+            "opções":{
+                    "Atacar":"Atacar o veterano",
+                    "Elevador":"voltar para o Elevador",
+        },
+        "4":{
+            "Titulo": "Sala das Engenharias",
+            "descrição":"Você está no quarto andar, o andar que habita o Raul"
+                        "será que você é capaz de desafiar ele para uma batalha?"
+                        "KITARA: Insperiano!, devo te alertar que, antes de chamar o Raul pro fight"
+                        "tente passar no -1 andar primeiro"
+                        "*Raul aparece*"
+                        "Raul e seu assistente tão tudo cansado de ter corrigido as PI"
+                        "Parece ser a hora perfeita para conseguir atrasar o EP",
+        },
+        "5":{
+        }
+        
+                
+    }
+    return cenário
 
 
 #início do código do jogo
