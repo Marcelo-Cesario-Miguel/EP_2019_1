@@ -8,7 +8,6 @@
 #definição de todos os cenários
 
 # Python program to print 
-# red text with green background 
   
 from colorama import Fore, Back, Style 
  
@@ -281,7 +280,8 @@ while jogo == True:
         
         if escolha == "A":
             print('')
-            print ("KITARA: Nãooo! Não corra, ele se você correr você morre!")
+            print(Fore.BLUE + "KITARA: Nãooo! Não corra, ele se você correr você morre!")
+            print(Style.RESET_ALL)
             print('')
             time.sleep(2)
             print("O veterano te alcançou, entrou dentro do seu corpo,"
@@ -302,20 +302,21 @@ while jogo == True:
             print("VOCÊ: Meu Deus! Onde eu estou?! Como eu vim parar aqui?!")
             print('')
             time.sleep(2)
-            print("KITARA: essa não, o veterano possuido de te invocou para"
+            print(Fore.BLUE + "KITARA: essa não, o veterano possuido de te invocou para"
                   " uma dimensão de guerra! Você terá que lutar com ele!")
+            print(Style.RESET_ALL)
             print('')
             time.sleep(2)
             print("VOCÊ: como assim eu vou ter que lutar?!")
             print('')
             time.sleep(2)
-            print("KITARA: Você faz muitas perguntas! Controle o medo!"
+            print(Fore.BLUE + "KITARA: Você faz muitas perguntas! Controle o medo!"
                   " Preste bem atenção você tem 100 pontos de vida"
                   " se você perder esses 100 pontos, vc morre e estará tudo"
                   " acabado! Não deixei o seu inimigo te acertar!"
                   " Nessa dimensão eu tenho o poder de forjar um único"
                   " equipamento para você lutar!")
-            
+            print(Style.RESET_ALL)
             opção_1  = "A: Espada divina - Causa 700 de dano"
             opção_2  = "B: Escudo divino - Reflete até 500 de dano"
             
@@ -338,8 +339,9 @@ while jogo == True:
                 time.sleep(2)
                 print("")
                     
-            print ("KITARA: agora que você escolheu seu equipamento,"
+            print(Fore.BLUE + "KITARA: agora que você escolheu seu equipamento,"
                    "lute como um bravo guerreiro!")
+            print(Style.RESET_ALL)
             time.sleep(2)
             print('')
             print("VOCÊ: Meu Deus do céu que coisa maluca mas"
