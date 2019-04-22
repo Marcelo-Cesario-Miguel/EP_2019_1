@@ -7,6 +7,11 @@
 
 #definição de todos os cenários
 
+# Python program to print 
+# red text with green background 
+  
+from colorama import Fore, Back, Style 
+ 
 cenário = {
         "Prédio 1":"Você está em frente ao prédio 1, o que deseja fazer?",
         "Elevador":"Você está no elevador, selecione um andar:",
@@ -26,12 +31,13 @@ Vitória = "Parabéns! Você venceu! Agora vá fazer o EP1!¯\_(ツ)_/¯"
 
 while jogo == True:
     
-    print("KITARA: Olá Insperiano, meu nome é Kitara, sou um espectro"
+    print(Fore.BLUE + "KITARA: Olá Insperiano, meu nome é Kitara, sou um espectro"
       " invisível vindo de outra de dimensão. Fui enviada porque você"
       " precisa conseguir adiar a entrega do EP1 de Design de Software"
       " senão você e todos os seus colegas vão pegar DP nessa matéria!!!"
       " Ficarei com você até conseguir, só então poderei voltar para minha"
       " dimensão!")
+    print(Style.RESET_ALL) 
     time.sleep(1)
     
     print("")
@@ -77,16 +83,17 @@ while jogo == True:
         print("")
         time.sleep(2)
         
-        print("KITARA: Não há tempo para explicações Insperiano! Você precisa"
+        print(Fore.BLUE + "KITARA: Não há tempo para explicações Insperiano! Você precisa"
           " adiar o EP1 para o bem de todos! Aliás, qual o seu nome?")
         time.sleep(2)
+        print(Style.RESET_ALL) 
         nome_do_jogador = input("Digite seu nome: ")
         print("")
         time.sleep(2)
         
-        print("KITARA: Certo {},"
+        print(Fore.BLUE + "KITARA: Certo {},"
       " precisamos encontrar seu professor!".format(nome_do_jogador))
-        
+        print(Style.RESET_ALL) 
         print("")
         time.sleep(2)
     
@@ -131,9 +138,10 @@ while jogo == True:
                   " a seguir seus caminhos novamente.")
             print("")
             time.sleep(2)
-            print("KITARA: essa não, forças inimigas interdimensionais estão"
+            print(Fore.BLUE + "KITARA: essa não, forças inimigas interdimensionais estão"
                   " tentando nos impedir! Você não vai conseguir acessar"
                   " o prédio 2 por enquanto! Vamos para o saguão!")
+            print(Style.RESET_ALL)
             print("")
             time.sleep(2)
             print("VOCÊ: Isso tudo é uma loucura Eu só posso estar sonhando,"
@@ -186,26 +194,29 @@ while jogo == True:
                   " EU estou invisível também?")
             time.sleep(2)
             print('')
-            print("KITARA: Não, não está, repare que muitas delas te encaram,"
+            print(Fore.BLUE + "KITARA: Não, não está, repare que muitas delas te encaram,"
                   " pelas energias que eu estou sentindo, elas estão possuidas"
                   " pelas mesmas forças malignas interdimensionais que criam"
                   " os campos magnéticos que te impedem de entrar em"
                   " determinados lugares.")
             time.sleep(2)
+            print(Style.RESET_ALL)
             print('')
             print("VOCÊ: pera aí, você consegue sentir os campos magnéticos e"
                   " as energias malignas?")
             time.sleep(2)
             print('')
-            print("KITARA: Sim hahaha, desculpe não te avisar, é que...")
+            print(Fore.BLUE + "KITARA: Sim hahaha, desculpe não te avisar, é que...")
             time.sleep(1)
+            print(Style.RESET_ALL)
             print('')
             print("VOCÊ: Nossa mano, se eu te enxergasse te deitava na" 
                   " porrada!")
             print('')
             time.sleep(2)
-            print("KITARA: HAHAHAH, sem mais delongas, vamos para a" 
+            print(Fore.BLUE + "KITARA: HAHAHAH, sem mais delongas, vamos para a" 
                   " biblioteca! Parece um lugar menos perigoso...")
+            print(Style.RESET_ALL)
             print('')
             time.sleep(2)
         
@@ -236,15 +247,16 @@ while jogo == True:
             print("")
         
         if escolha == "A":
-            print ("KITARA: Ele é esta possuido," 
+            print(Fore.BLUE + "KITARA: Ele é esta possuido," 
                    " cuidado {}!".format(nome_do_jogador))
+            print(Style.RESET_ALL)
         
         print('')    
         print("O veterano começa a andar na sua direção com um olhar mortal.")
         time.sleep(2)
         print('')    
-        print("KITARA: essa não! Ele vai está possuido e vai nos atacar!")
-        
+        print(Fore.BLUE + "KITARA: essa não! Ele vai está possuido e vai nos atacar!")
+        print(Style.RESET_ALL)
         opção_1 = "A: Correr. "
         opção_2 = "B: Encará-lo com um olhar firme"
         
@@ -464,5 +476,3 @@ while jogo == True:
 
     
 print(derrota) 
-
-    
