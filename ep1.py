@@ -635,25 +635,6 @@ while jogo == True:
             
                     
                     
-                
-            
         
-        
-                
-        
-        
-        
-        
-        
-        
-        
-        
-                
-                
-                
-            
-                
-                
-
     
 print(derrota) 
