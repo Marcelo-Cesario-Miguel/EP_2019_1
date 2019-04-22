@@ -18,7 +18,7 @@ cenário = {
         "Biblioteca":"Você está na biblioteca do olhar penetrante",
         "Prédio 2":"Você está infiltrado no prédio 2, o covil do Raul",
         "Humberto":"Você está infiltrado na sala do Humberto",
-        "Raul":"Você está infiltrado na sala do Raul"}
+        "Raul":"Você está infiltrado na sala do Raul. Se prepare Jogador, se chegou até aqui, terá que ir até o final"}
 
 
 
@@ -32,7 +32,6 @@ derrota = "GAME OVER! x__x "
 Vitória = "Parabéns! Você venceu! Agora vá fazer o EP1!¯\_(ツ)_/¯"
 
 while jogo == True:
-    
     print(Fore.BLUE + "KITARA: Olá Insperiano, meu nome é Kitara, sou um espectro"
       " invisível vindo de outra de dimensão. Fui enviada porque você"
       " precisa conseguir adiar a entrega do EP1 de Design de Software"
@@ -227,7 +226,7 @@ while jogo == True:
               " te olham feio brevemente antes de retomar o que faziam.")
         print('')
         time.sleep(2)
-        print("Você percebe que tem um veterano te que conitnuo te encarando.")
+        print("Você percebe que tem um veterano que continua te encarando.")
         
         opção_1 = "A: encarar de volta com a testa franzida."
         opção_2 = "B: desviar o olhar."
@@ -603,26 +602,28 @@ while jogo == True:
             print ("Opção A: Nocautear o Humberto com o Escudo")
             print ("Opção B: Gritar com ele e tentar dar uma de durão")
             escolha_humberto=input ("A ou B? Digite seu código aqui")
-            if escolha_humberto !="A":
-                if escolha_humberto !="B":
-                    print ("Opção invalida, por favor responda com A ou B")
-                    escolha_humberto=input ("A ou B? Digite seu código aqui")
-                if escolha_humberto =="B":
-                    print ("Voce tentou gritar com o Humberto")
-                    time.sleep(1)
-                    print(Fore.RED + " Humberto olhou para você com um ódio mortal")
-                    print ("seus olhos começaram a ficar VERMELHO")
-                    time.sleep(1)
-                    print ("Ele olhou dentro da tua alma")
-                    print (".")
-                    time.sleep(1)
-                    print (".")
-                    time.sleep(1)
-                    print (".")
-                    time.sleep(1)
-                    print("E simplesmente")
-                    print(Style.RESET_ALL)
-                    jogo = False
+            while escolha_humberto !="A" and escolha_humberto !="B":
+                print ("Opção invalida, por favor responda com A ou B")
+                escolha_humberto=input ("A ou B? Digite seu código aqui")
+            if escolha_humberto =="B":
+                print ("Voce tentou gritar com o Humberto")
+                time.sleep(1)
+                print(Fore.RED + " Humberto olhou para você com um ódio mortal")
+                print ("seus olhos começaram a ficar VERMELHO")
+                time.sleep(1)
+                print ("Ele olhou dentro da tua alma")
+                print (".")
+                time.sleep(1)
+                print (".")
+                time.sleep(1)
+                print (".")
+                time.sleep(1)
+                print("E simplesmente")
+                print(Style.RESET_ALL)
+                jogo = False
+                if jogo == False:
+                    time.sleep(2)
+                    break
             if escolha_humberto =="A":
                 print("Voce correu, por trás dele, tentou um nocaute e...")
                 print("Nocaute foi realizado com sucesso")
@@ -630,11 +631,113 @@ while jogo == True:
                 print(Fore.LIGHTBLUE_EX + "ALUNO: Obrigado Jogador, você me salvou, não sei o que aconteceria sem você")
                 print("Pensei que iria morrer, tome, o segredo não pode morrer comigo")
                 print(Fore.MAGENTA + "Conta do Raul foi adicionado ao seu inventario")
-                print(Fore.BLUE + "KITARA: Muito bem {0}, agora acredito que estamos na vantagem, VAMOS ATRÁS DO RAUL!")
+                print(Fore.BLUE + "KITARA: Muito bem {0}, agora acredito que estamos na vantagem, VAMOS ATRÁS DO RAUL!".format(nome_do_jogador))
                 print(Style.RESET_ALL)
-            
-                    
-                    
-        
-    
-print(derrota) 
+                time.sleep(2)
+                print (cenário["Raul"])
+                print (cenário["Raul"])
+                i = len(cenário["Raul"])
+                print(i*"-")
+                print('')
+                time.sleep(4)
+                print(Fore.BLUE + "KITARA: Chegamos {0}, é aqui que a nossa jornada termina. Agora é por sua conta e risco, boa sorte jogador!".format(nome_do_jogador))
+                print(Style.RESET_ALL)
+                time.sleep(2)
+                print ("VOCÊ: Agora é por minha conta, isso já está além de um simples EP, devo salvar minha faculdade")
+                print("*A sala parece estar vazia*")
+                time.sleep(2)
+                print ("VOCÊ: Raul, apareça. Ou irei atrás de você")
+                time.sleep(4)
+                print("Logo após isso, o Raul aparece")
+                print(Fore.RED + "Raul: Quem ameaça me perturbar?")
+                print(Style.RESET_ALL)
+                time.sleep(1)
+                print("VOCÊ: O único que poderá te deter")
+                print(Fore.RED + "Raul: Isso iremos ver")
+                print(Fore.RED + "Raul: Umberto, apareça!")
+                time.sleep(3)
+                print(Fore.RED + "Raul: Umberto??")
+                print(Style.RESET_ALL)
+                print ("VOCÊ: Ta sentindo falta de alguem?")
+                print ("VOCÊ: Agora o papo é o seguinte, ou você derruba o seu proprio servidor e adia o EP, ou...")
+                print(Fore.RED + "Raul: Ou o que!")
+                print(Style.RESET_ALL)
+                time.sleep(1)
+                print("VOCÊ: Ou eu compartilho sua conta no Twitter")
+                time.sleep(1)
+                print(Fore.RED + "Raul: Muito bem, feito. Mas lembre-se, se prepare para a PF, seu nome esta marcado")
+                print("Raul: Aliás, qual o teu nome? Acredito que devo saber quem me derrotou")
+                print(Style.RESET_ALL)
+                time.sleep(1)
+                print("VOCÊ: Meu nome? Meu nome é {}".format(nome_do_jogador))
+                ganhou = True
+                jogo == False
+                if jogo == False:
+                    time.sleep(2)
+                    break
+        if sala == "Raul":
+            print (cenário["Raul"])
+            print (cenário["Raul"])
+            i = len(cenário["Raul"])
+            print(i*"-")
+            print('')
+            time.sleep(4)
+            print(Fore.BLUE + "KITARA: Chegamos {0}, é aqui que a nossa jornada termina. Agora é por sua conta e risco, boa sorte jogador!".format(nome_do_jogador))
+            print(Style.RESET_ALL)
+            time.sleep(2)
+            print ("VOCÊ: Agora é por minha conta, isso já está além de um simples EP, devo salvar minha faculdade")
+            print("*A sala parece estar vazia*")
+            time.sleep(2)
+            print ("VOCÊ: Raul, apareça. Ou irei atrás de você")
+            time.sleep(4)
+            print("Logo após isso, o Raul aparece")
+            print(Fore.RED + "Raul: Quem ameaça me perturbar?")
+            print(Style.RESET_ALL)
+            time.sleep(2)
+            print("VOCÊ: O único que poderá te deter")
+            print(Fore.RED + "Raul: Isso iremos ver")
+            time.sleep(2)
+            print(Fore.RED + "Raul: Umberto, apareça!")
+            print(Style.RESET_ALL)
+            time.sleep(2)
+            print("*E num piscar de olhos, o Umberto aparece, agarra você e te imobiliza")
+            time.sleep(2)
+            print(Fore.RED + "Raul: Você achou mesmo que eu não estava lhe esperando? Esperava um oponente que estivesse a altura de me vencer. Mas me enganei")
+            time.sleep(2)
+            print("Raul: Mas admiro a sua coragem, apesar de sua burrice ser maior")
+            time.sleep(2)
+            print("Raul: eu poderia simplesmente te possuir agora, mas qual graça teria? Me diga aluno, o que deseja?")
+            print(Style.RESET_ALL)
+            decisao= input("A: Xingar ele."
+                           " B: Pedir misericordia")
+            while decisao !="A" and decisao != "B":
+                print ("Responda com A ou B")
+                decisao= input("A: Xingar ele."
+                           " B: Pedir misericordia")
+            if decisao == "A": #Desculpa pelo palavriado Raul
+                print("VOCÊ: Vai se ****, prefiro morrer a pedir misericordia a você")
+                time.sleep(1)
+                print(Fore.RED + "Raul: Como você desejar!")
+                print(Style.RESET_ALL)
+                time.sleep(1)
+                print("e num piscar de olhos")
+                time.sleep(3)
+                jogo == False
+                if jogo == False:
+                    time.sleep(2)
+                    break
+            else:
+                print("Você: Muito obrigado Raul, não sabia o que estava fazendo, quero que você atrase o EP apenas por alguns dias")
+                time.sleep(1)
+                print(Fore.RED + "Raul: Como você desejar! Porém, o adiamento será apenas para você, e não para seus colegas")
+                print(Style.RESET_ALL)
+                print (Fore.BLUE + "Boa sorte da próxima vez {}, seu finalizamento não foi 100%".format(nome_do_jogador))
+                time.sleep(2)
+                jogo == False
+                if jogo == False:
+                    time.sleep(2)
+                    break
+if ganhou == True:
+    print (Vitória)
+else:
+    print(derrota) 
